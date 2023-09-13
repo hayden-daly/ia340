@@ -21,3 +21,12 @@ values('c1', 'postgresql', 'r1', 'p1@jmu.edu'),
 ('s4@jmu.edu', 'c2'),
 ('s2@jmu.edu', 'c3'),
 ('s3@jmu.edu', 'c3')
+
+--Q2.5
+-- insert professor first, 
+
+insert into professor (p_email, p_name, office)
+values ('p3@jmu.edu', 'p3', 'o3') ;
+
+insert into course (c_number, c_name, room, p_email)
+values ('c4', 'facebook','r1', 'p3@jmu.edu')
