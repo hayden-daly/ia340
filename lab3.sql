@@ -38,3 +38,13 @@ where p_email = 'p1@jmu.edu';
 delete from professor 
 where p_email = 'p1@jmu.edu'
 
+select * from enroll
+
+select c_number, count(*) as num_student
+from enroll
+group by c_number
+order by num_student desc
+limit 1
+
+
+
